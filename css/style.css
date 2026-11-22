@@ -210,13 +210,22 @@ a:focus-visible { outline: 2px solid var(--link); outline-offset: 3px; border-ra
   justify-content: space-between;
 }
 
-@media (max-width: 30rem) {
-  body { font-size: 1.125rem; }
-  .page { padding: 2rem 1.125rem 3rem; }
-  .site-header { margin-bottom: 2.75rem; }
-  .essay h1 { font-size: 1.875rem; }
-  .essay-list { gap: 0.9rem; }
-  .essay-list li { grid-template-columns: auto 1fr; column-gap: 0.75rem; }
-  .essay-list li a { grid-column: 1 / -1; }
-  .essay-list .category, .essay-list time { text-align: left; }
+.essay-list a { line-height: 1.35; }
+
+@media (max-width: 40rem) {
+  body { font-size: 1.125rem; line-height: 1.65; }
+  .page { margin-left: 0; padding: 1.75rem 1.25rem 2.5rem; }
+  .site-header { gap: 0.25rem 1.5rem; margin-bottom: 2.25rem; padding-bottom: 1rem; border-bottom: 1px solid var(--rule); }
+  .site-nav { gap: 1.25rem; }
+  .intro { margin-bottom: 2rem; font-size: 1rem; }
+  .essay h1 { font-size: 1.75rem; }
+  .essay .dateline { margin-bottom: 2rem; }
+  .essay-list { gap: 1.5rem; }
+  .essay-list li { grid-template-columns: auto 1fr; column-gap: 0.75rem; row-gap: 0.3rem; }
+  .essay-list li a { grid-column: 1 / -1; font-weight: 500; }
+  .essay-list .category, .essay-list time { text-align: left; font-size: 0.875rem; }
+  .essay-list .category::after { content: "\00b7"; margin-left: 0.75rem; }
+  .notes { margin-top: 2.5rem; }
+  .back { margin-top: 2.5rem; }
+  .site-footer { margin-top: 3rem; padding-top: 1.25rem; flex-direction: column; gap: 0.25rem; }
 }
