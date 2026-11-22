@@ -171,6 +171,9 @@ a:focus-visible { outline: 2px solid var(--link); outline-offset: 3px; border-ra
 
 .essay p { margin: 0 0 1.35rem; }
 
+.essay ul { margin: 0 0 1.35rem; padding-left: 1.3rem; }
+.essay ul li { margin-bottom: 0.6rem; padding-left: 0.2rem; }
+
 .essay h2 {
   font-size: 1.25rem;
   letter-spacing: -0.015em;
