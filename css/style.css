@@ -132,6 +132,39 @@ a:focus-visible { outline: 2px solid var(--link); outline-offset: 3px; border-ra
   font-variant-numeric: tabular-nums;
 }
 
+/* Home: publications */
+
+.section-title {
+  font-family: var(--sans);
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 4rem 0 1.25rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--rule);
+}
+
+.pub-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.pub-list li { display: flex; flex-direction: column; gap: 0.2rem; }
+.pub-list a, .pub-list .pub-title { line-height: 1.35; }
+.pub-list .cite { font-size: 0.9375rem; line-height: 1.45; color: var(--muted); }
+
+/* About: social link */
+
+.social { margin-top: 2rem; }
+.social a { display: inline-flex; align-items: center; gap: 0.5rem; font-size: 1rem; }
+.social svg { flex: none; }
+
 /* Essay */
 
 .essay h1 {
@@ -225,6 +258,9 @@ a:focus-visible { outline: 2px solid var(--link); outline-offset: 3px; border-ra
   .essay-list li a { grid-column: 1 / -1; font-weight: 500; }
   .essay-list .category, .essay-list time { text-align: left; font-size: 0.875rem; }
   .essay-list .category::after { content: "\00b7"; margin-left: 0.75rem; }
+  .section-title { margin: 3rem 0 1rem; padding-top: 1.25rem; }
+  .pub-list { gap: 1.25rem; }
+  .pub-list .cite { font-size: 0.875rem; }
   .notes { margin-top: 2.5rem; }
   .back { margin-top: 2.5rem; }
   .site-footer { margin-top: 3rem; padding-top: 1.25rem; flex-direction: column; gap: 0.25rem; }
